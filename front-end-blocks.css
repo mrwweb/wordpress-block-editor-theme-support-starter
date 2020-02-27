@@ -1,0 +1,183 @@
+/*====================================
+=            Block Styles            =
+====================================*/
+
+
+/* For alignments, consider: https://themehybrid.com/weblog/block-containers-and-wide-full-alignment */
+
+/*==============================
+=            Colors            =
+==============================*/
+.has-[name]-background-color {
+	background-color: ;
+}
+
+.has-[name]-color {
+	color: ;
+}
+
+.has-[name]-gradient-background {
+	background: linear-gradient();
+}
+
+
+
+/*======================================================
+=            Block Elements Without Classes            =
+======================================================*/
+/*
+ * Headings
+ *
+ * Alignments: has-text-align-[left/center/right]
+ * Color Support: Text
+ */
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+/*
+ * Paragraph
+ *
+ * Alignments: has-text-align-[left/center/right]
+ * Font-size: has-[name]-font-size
+ * Color Support: Background, Text
+ */
+p {}
+
+/*
+ * List
+ */
+ul {}
+ol {}
+
+
+
+/*=============================================
+=            Common Block Elements            =
+=============================================*/
+
+/*
+ * Block Quote
+ *
+ * Alignments: has-text-align-[left/center/right]
+ * Default Style Variations: is-style-large
+ */
+blockquote.wp-block-quote {}
+
+	blockquote.wp-block-quote cite {}
+
+/*
+ * Pull Quote
+ *
+ * Alignments: alignleft, alignright, alignwide, alignfull
+ * Default Style Variations: is-style-solid-color
+ * Color Support: Background, Text
+ */
+figure.wp-block-pullquote {}
+
+	figure.wp-block-pullquote blockquote {}
+	figure.wp-block-pullquote cite {}
+
+/*
+ * Horizontal Rule
+ *
+ * Default Style Variations: is-style-wide, is-style-dots
+ */
+hr.wp-block-separator {}
+
+
+/*
+ * Spacer
+ *
+ * Inline Style: height: [XXX]px;
+ */
+div.wp-block-spacer {}
+
+/*
+ * Button
+ *
+ * Note: Buttons container added in WP5.4
+ *
+ * Alignments: alignleft, aligncenter, alignright
+ * Default Style Variations: is-style-outline
+ * Possible Inline Styles: border-radius
+ * Color Support: Background, Text
+ */
+div.wp-block-buttons {}
+
+	div.wp-block-button {}
+
+		div.wp-block-button a.wp-block-button__link {} /* option to disable */
+
+
+
+/*====================================
+=            Media Blocks            =
+====================================*/
+
+/*
+ * Images
+ *
+ * Alignments: alignwide, alignfull
+ * Inline Styles (on figure): background-image, background-position (if using focal point)
+ */
+figure.wp-block-image {}
+
+	figure.wp-block-image img {}
+
+	/* when aligned right or left */
+	div.wp-block-image figure.alignright.size-medium img {}
+
+	/* when aligned full or wide */
+	figure.wp-block-image.alignfull.size-large {}
+
+/*
+ * Media & Text
+ *
+ * Alignments: alignwide, alignfull, is-vertically-aligned-[top/center/bottom]
+ * Option Classes: has-background, is-stacked-on-mobile, is-image-fill, has-image-on-the-right
+ * Color Support: Background
+ */
+div.wp-block-media-text {}
+
+	div.wp-block-media-text figure.wp-block-media-text__media {}
+	div.wp-block-media-text div.wp-block-media-text__content {}
+
+/*
+ * File
+ */
+div.wp-block-file {}
+div.wp-block-file a:first-child {} /* download link */
+div.wp-block-file a.wp-block-file__button {}
+
+
+
+/*=====================================
+=            Layout Blocks            =
+=====================================*/
+
+/*
+ * Columns
+ *
+ * Additional Classes: wp-#-columns // # = number of columns
+ * Alignments: alignwide, alignfull, are-vertically-aligned-[top/center/bottom]
+ * Inline Style on wp-block-column: display: flex
+ * Inline Style on Columns: flex-basis: [XX]%
+ */
+div.wp-block-columns {}
+
+	div.wp-block-columns div.wp-block-column
+	
+/*
+ * Group
+ *
+ * Alignments: alignwide, alignfull
+ * Option Classes: has-background
+ * Color Support: Background
+ */
+div.wp-block-group {}
+
+	div.wp-block-group div.wp-block-group__inner-container {}

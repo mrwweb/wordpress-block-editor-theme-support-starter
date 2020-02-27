@@ -1,0 +1,56 @@
+/*==============================================================
+=            Styles Specific to Block Editor Screen            =
+==============================================================*/
+
+/*
+ * Block editor styles wrapper: .editor-styles-wrapper
+ * @see: https://developer.wordpress.org/block-editor/developers/themes/theme-support/
+ */
+
+/*==========================================
+=            Block Editor Width            =
+==========================================*/
+/* Main column width */
+.wp-block {
+    max-width: 720px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 1080px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
+
+/*=================================================
+=            General Block Differences            =
+=================================================*/
+
+/*
+ * Wrapper element for all blocks
+ */
+.wp-block {}
+
+	/* Type */
+	.wp-block[date-type="core/button"] {}
+
+	/* Alignment */
+	.wp-block[data-align="center"] {}
+
+
+
+
+/*====================================================
+=            Blocks with Different Markup            =
+====================================================*/
+
+/*
+ * Button
+ */
+div.wp-block-button {}
+
+	div.wp-block-button div.wp-block-button__link {}
