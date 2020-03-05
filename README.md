@@ -12,7 +12,11 @@ Depending on your CSS authoring preferences and site environment, you are encour
 
 ## Potential Roadmap
 
-- [ ] Keep updated with future versions for WordPress
+- Keep updated with future versions for WordPress
 - [ ] Add SCSS versions
 - [ ] Include relevant PHP functions for theme support (?)
-- [ ] Support for package managers(?)
+- [ ] Support for package managers (?)
+
+## Finding This Useful?
+
+You'll probably love the [MRW Simplified Editor plugin](https://wordpress.org/plugins/mrw-web-design-simple-tinymce/).

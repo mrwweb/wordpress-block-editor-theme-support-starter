@@ -2,7 +2,6 @@
 =            Block Styles            =
 ====================================*/
 
-
 /* For alignments, consider: https://themehybrid.com/weblog/block-containers-and-wide-full-alignment */
 
 /*==============================
@@ -88,7 +87,6 @@ figure.wp-block-pullquote {}
  */
 hr.wp-block-separator {}
 
-
 /*
  * Spacer
  *
@@ -152,6 +150,30 @@ div.wp-block-media-text {}
 div.wp-block-file {}
 div.wp-block-file a:first-child {} /* download link */
 div.wp-block-file a.wp-block-file__button {}
+
+
+
+/*=======================================
+=            "Widget" Blocks            =
+=========================================*/
+
+/*
+ * Social Links
+ *
+ * Alignments: alignleft, aligncenter, alignright
+ * Default Style Variations: is-style-logos-only, is-style-pill-shape
+ */
+ul.wp-block-social-links {}
+
+	ul.wp-block-social-links li.wp-social-link.wp-social-link-{site} {}
+
+	ul.wp-block-social-links li.wp-social-link a svg path {}
+
+/* default style, note high specificity! */
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-{site} {
+	background-color: ;
+	color: ;
+}
 
 
 
