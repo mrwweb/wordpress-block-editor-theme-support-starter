@@ -1,24 +1,36 @@
-/*====================================
-=            Block Styles            =
-====================================*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
 
-/* For alignments, consider: https://themehybrid.com/weblog/block-containers-and-wide-full-alignment */
+	1. 	Document Setup
+	2. 	Element Base
+	3. 	Helper Classes
+	4. 	Block Styles
+	5. 	Colors
+	6. 	Common Block Elements
+	7. 	Media Blocks
+	8.  "Widget" Blocks
+	9.  Layout Blocks
 
-/*==============================
-=            Colors            =
-==============================*/
-.has-[name]-background-color {
-	background-color: ;
-}
+----------------------------------------------------------------------------- */
 
-.has-[name]-color {
-	color: ;
-}
 
-.has-[name]-gradient-background {
-	background: linear-gradient();
-}
+/* -------------------------------------------------------------------------- */
 
+/*	1. Document Setup
+
+	This is for document level selectors such as base level fonts and colors.
+
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	2. Element Base
+
+	This includes headings, em, p, li etc.
+/* ---------------------------------------------*---------------------------- */
 
 
 /*======================================================
@@ -53,9 +65,34 @@ ul {}
 ol {}
 
 
+/* -------------------------------------------------------------------------- */
+
+/*	3. Helper Classes
+/* -------------------------------------------------------------------------- */
+
+/*====================================
+=            4. Block Styles         =
+====================================*/
+
+/* For alignments, consider: https://themehybrid.com/weblog/block-containers-and-wide-full-alignment */
+
+/*==============================
+=            5. Colors         =
+==============================*/
+.has-[name]-background-color {
+	background-color: ;
+}
+
+.has-[name]-color {
+	color: ;
+}
+
+.has-[name]-gradient-background {
+	background: linear-gradient();
+}
 
 /*=============================================
-=            Common Block Elements            =
+=            6. Common Block Elements         =
 =============================================*/
 
 /*
@@ -113,7 +150,7 @@ div.wp-block-buttons {}
 
 
 /*====================================
-=            Media Blocks            =
+=            7. Media Blocks         =
 ====================================*/
 
 /*
@@ -154,7 +191,7 @@ div.wp-block-file a.wp-block-file__button {}
 
 
 /*=======================================
-=            "Widget" Blocks            =
+=            8. "Widget" Blocks         =
 =========================================*/
 
 /*
@@ -178,7 +215,7 @@ ul.wp-block-social-links {}
 
 
 /*=====================================
-=            Layout Blocks            =
+=            9. Layout Blocks         =
 =====================================*/
 
 /*

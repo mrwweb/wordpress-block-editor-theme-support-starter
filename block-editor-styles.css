@@ -1,5 +1,16 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	1. 	Styles Specific to Block Editor Screen
+	2. 	Block Editor Width
+	3. 	General Block Differences
+	4. 	Blocks with Different Markup
+
+----------------------------------------------------------------------------- */
+
 /*==============================================================
-=            Styles Specific to Block Editor Screen            =
+=            1. Styles Specific to Block Editor Screen         =
 ==============================================================*/
 
 /*
@@ -8,7 +19,7 @@
  */
 
 /*==========================================
-=            Block Editor Width            =
+=            2. Block Editor Width         =
 ==========================================*/
 /* Main column width */
 .wp-block {
@@ -27,7 +38,7 @@
 
 
 /*=================================================
-=            General Block Differences            =
+=            3. General Block Differences         =
 =================================================*/
 
 /*
@@ -45,7 +56,7 @@
 
 
 /*====================================================
-=            Blocks with Different Markup            =
+=            4. Blocks with Different Markup         =
 ====================================================*/
 
 /*
