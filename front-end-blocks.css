@@ -79,15 +79,15 @@ ol {}
 /*==============================
 =            5. Colors         =
 ==============================*/
-.has-[name]-background-color {
+.has-NAME-background-color {
 	background-color: ;
 }
 
-.has-[name]-color {
+.has-NAME-color {
 	color: ;
 }
 
-.has-[name]-gradient-background {
+.has-NAME-gradient-background {
 	background: linear-gradient();
 }
 
