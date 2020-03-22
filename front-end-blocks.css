@@ -185,8 +185,21 @@ div.wp-block-media-text {}
  * File
  */
 div.wp-block-file {}
-div.wp-block-file a:first-child {} /* download link */
-div.wp-block-file a.wp-block-file__button {}
+
+	/* download link */
+	div.wp-block-file a:first-child {}
+
+	div.wp-block-file a.wp-block-file__button {}
+
+/*
+ * Embeds
+ *
+ * Additional Classes on figure element: .is-type-[video/audio/etc], .is-provider-[youtube/twitter/etc]
+ * If Resize Option: .wp-embed-aspect-ratio-[16-9], .wp-has-aspect-ratio
+ */
+figure.wp-block-embed {}
+
+	figure.wp-block-embed div.wp-block-embed__wrapper {}
 
 
 
