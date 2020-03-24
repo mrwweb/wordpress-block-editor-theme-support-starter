@@ -10,6 +10,10 @@ The selectors in this project are as much for documentation as they are for styl
 
 Depending on your CSS authoring preferences and site environment, you are encouraged to adjust selectors in your project to keep specificity as low as possible.
 
+## Comment Styles
+
+Follow the [TwentyTwenty](https://github.com/WordPress/twentytwenty/blob/master/style.css#L51) section comment styles for block group sections and PHPDoc-like comments for a single block section.
+
 ## Potential Roadmap
 
 - Keep updated with future versions for WordPress

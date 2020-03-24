@@ -30,13 +30,13 @@
 /*	2. Element Base
 
 	This includes headings, em, p, li etc.
-/* ---------------------------------------------*---------------------------- */
+/* -------------------------------------------------------------------------- */
 
 
 /*======================================================
 =            Block Elements Without Classes            =
 ======================================================*/
-/*
+/**
  * Headings
  *
  * Alignments: has-text-align-[left/center/right]
@@ -49,7 +49,7 @@ h4 {}
 h5 {}
 h6 {}
 
-/*
+/**
  * Paragraph
  *
  * Alignments: has-text-align-[left/center/right]
@@ -58,7 +58,7 @@ h6 {}
  */
 p {}
 
-/*
+/**
  * List
  */
 ul {}
@@ -70,15 +70,17 @@ ol {}
 /*	3. Helper Classes
 /* -------------------------------------------------------------------------- */
 
-/*====================================
-=            4. Block Styles         =
-====================================*/
+/* -------------------------------------------------------------------------- */
+
+/*	4. Block Styles
+/* -------------------------------------------------------------------------- */
 
 /* For alignments, consider: https://themehybrid.com/weblog/block-containers-and-wide-full-alignment */
 
-/*==============================
-=            5. Colors         =
-==============================*/
+/* -------------------------------------------------------------------------- */
+
+/*	5. Colors
+/* -------------------------------------------------------------------------- */
 .has-NAME-background-color {
 	background-color: ;
 }
@@ -91,11 +93,12 @@ ol {}
 	background: linear-gradient();
 }
 
-/*=============================================
-=            6. Common Block Elements         =
-=============================================*/
+/* -------------------------------------------------------------------------- */
 
-/*
+/*	6. Common Block Elements
+/* -------------------------------------------------------------------------- */
+
+/**
  * Block Quote
  *
  * Alignments: has-text-align-[left/center/right]
@@ -105,7 +108,7 @@ blockquote.wp-block-quote {}
 
 	blockquote.wp-block-quote cite {}
 
-/*
+/**
  * Pull Quote
  *
  * Alignments: alignleft, alignright, alignwide, alignfull
@@ -117,21 +120,21 @@ figure.wp-block-pullquote {}
 	figure.wp-block-pullquote blockquote {}
 	figure.wp-block-pullquote cite {}
 
-/*
+/**
  * Horizontal Rule
  *
  * Default Style Variations: is-style-wide, is-style-dots
  */
 hr.wp-block-separator {}
 
-/*
+/**
  * Spacer
  *
  * Inline Style: height: [XXX]px;
  */
 div.wp-block-spacer {}
 
-/*
+/**
  * Button
  *
  * Note: Buttons container added in WP5.4
@@ -149,11 +152,12 @@ div.wp-block-buttons {}
 
 
 
-/*====================================
-=            7. Media Blocks         =
-====================================*/
+/* -------------------------------------------------------------------------- */
 
-/*
+/*	7. Media Blocks
+/* -------------------------------------------------------------------------- */
+
+/**
  * Images
  *
  * Alignments: alignwide, alignfull
@@ -169,7 +173,7 @@ figure.wp-block-image {}
 	/* when aligned full or wide */
 	figure.wp-block-image.alignfull.size-large {}
 
-/*
+/**
  * Media & Text
  *
  * Alignments: alignwide, alignfull, is-vertically-aligned-[top/center/bottom]
@@ -181,7 +185,7 @@ div.wp-block-media-text {}
 	div.wp-block-media-text figure.wp-block-media-text__media {}
 	div.wp-block-media-text div.wp-block-media-text__content {}
 
-/*
+/**
  * File
  */
 div.wp-block-file {}
@@ -191,7 +195,7 @@ div.wp-block-file {}
 
 	div.wp-block-file a.wp-block-file__button {}
 
-/*
+/**
  * Embeds
  *
  * Additional Classes on figure element: .is-type-[video/audio/etc], .is-provider-[youtube/twitter/etc]
@@ -203,11 +207,12 @@ figure.wp-block-embed {}
 
 
 
-/*=======================================
-=            8. "Widget" Blocks         =
-=========================================*/
+/* -------------------------------------------------------------------------- */
 
-/*
+/*	8. Widget Blocks
+/* -------------------------------------------------------------------------- */
+
+/**
  * Social Links
  *
  * Alignments: alignleft, aligncenter, alignright
@@ -227,11 +232,12 @@ ul.wp-block-social-links {}
 
 
 
-/*=====================================
-=            9. Layout Blocks         =
-=====================================*/
+/* -------------------------------------------------------------------------- */
 
-/*
+/*	9. Layout Blocks
+/* -------------------------------------------------------------------------- */
+
+/**
  * Columns
  *
  * Additional Classes: wp-#-columns // # = number of columns
@@ -243,8 +249,8 @@ div.wp-block-columns {}
 
 	div.wp-block-columns div.wp-block-column {}
 	
-/*
- * Group
+/**
+s* Group
  *
  * Alignments: alignwide, alignfull
  * Option Classes: has-background
