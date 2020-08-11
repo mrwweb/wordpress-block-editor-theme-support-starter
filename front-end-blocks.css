@@ -2,40 +2,22 @@
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 
-	1. Document Setup
-	2. Element Base
-	3. Helper Classes
-	4. Block Styles
-	5. Colors
-	6. Common Block Elements
-	7. Media Blocks
-	8. "Widget" Blocks
-	9. Layout Blocks
+	1. Blocks without Classes (Text)
+	2. Font Sizes
+	3. Colors & Gradients
+	4. Alignments
+	5. Text Blocks
+	6. Media Blocks
+	7. Design Blocks
+	8. Widget Blocks
+	9. Embed Blocks
 
 ----------------------------------------------------------------------------- */
 
-
 /* -------------------------------------------------------------------------- */
 
-/*	1. Document Setup
-
-	This is for document level selectors such as base level fonts and colors.
-
+/*	1. Blocks without Classes (Text)
 /* -------------------------------------------------------------------------- */
-
-
-
-/* -------------------------------------------------------------------------- */
-
-/*	2. Element Base
-
-	This includes headings, em, p, li etc.
-/* -------------------------------------------------------------------------- */
-
-
-/*======================================================
-=            Block Elements Without Classes            =
-======================================================*/
 /**
  * Headings
  *
@@ -65,21 +47,18 @@ ul {}
 ol {}
 
 
-/* -------------------------------------------------------------------------- */
-
-/*	3. Helper Classes
-/* -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
 
-/*	4. Block Styles
+/*	2. Font Sizes
+/* -------------------------------------------------------------------------- */
+.has-NAME-font-size {}
+
+
+
 /* -------------------------------------------------------------------------- */
 
-/* For alignments, consider: https://themehybrid.com/weblog/block-containers-and-wide-full-alignment */
-
-/* -------------------------------------------------------------------------- */
-
-/*	5. Colors
+/*	3. Colors & Gradients
 /* -------------------------------------------------------------------------- */
 .has-NAME-background-color {
 	background-color: ;
@@ -93,13 +72,27 @@ ol {}
 	background: linear-gradient();
 }
 
+
+
 /* -------------------------------------------------------------------------- */
 
-/*	6. Common Block Elements
+/*	4. Alignments
+/* -------------------------------------------------------------------------- */
+
+/* For alignments, consider: https://themehybrid.com/weblog/block-containers-and-wide-full-alignment */
+.alignwide {}
+
+.alignfull {}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	5. Text Blocks
 /* -------------------------------------------------------------------------- */
 
 /**
- * Block Quote
+ * Quote
  *
  * Alignments: has-text-align-[left/center/right]
  * Default Style Variations: is-style-large
@@ -109,7 +102,7 @@ blockquote.wp-block-quote {}
 	blockquote.wp-block-quote cite {}
 
 /**
- * Pull Quote
+ * Pullquote
  *
  * Alignments: alignleft, alignright, alignwide, alignfull
  * Default Style Variations: is-style-solid-color
@@ -121,44 +114,39 @@ figure.wp-block-pullquote {}
 	figure.wp-block-pullquote cite {}
 
 /**
- * Horizontal Rule
+ * Table
  *
- * Default Style Variations: is-style-wide, is-style-dots
+ * Alignments: alignleft, aligncenter, alignright, alignwide, alignfull
+ * Default Style Variations: is-style-stripes
+ * Color Support: Background
  */
-hr.wp-block-separator {}
+figure.wp-block-table table {}
 
 /**
- * Spacer
- *
- * Inline Style: height: [XXX]px;
+ * Code
  */
-div.wp-block-spacer {}
+pre.wp-block-code pre {}
 
 /**
- * Button
- *
- * Note: Buttons container added in WP5.4
- *
- * Alignments: alignleft, aligncenter, alignright
- * Default Style Variations: is-style-outline
- * Possible Inline Styles: border-radius
- * Color Support: Background, Text
+ * Preformatted
  */
-div.wp-block-buttons {}
+pre.wp-block-preformatted {}
 
-	div.wp-block-button {}
 
-		div.wp-block-button a.wp-block-button__link {} /* option to disable */
+/**
+ * Verse
+ */
+pre.wp-block-verse {}
 
 
 
 /* -------------------------------------------------------------------------- */
 
-/*	7. Media Blocks
+/*	6. Media Blocks
 /* -------------------------------------------------------------------------- */
 
 /**
- * Images
+ * Image
  *
  * Alignments: alignwide, alignfull
  * Inline Styles (on figure): background-image, background-position (if using focal point)
@@ -177,6 +165,12 @@ figure.wp-block-image {}
 	figure.wp-block-image.alignfull.size-large {}
 
 /**
+ * Gallery
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
  * Media & Text
  *
  * Alignments: alignwide, alignfull, is-vertically-aligned-[top/center/bottom]
@@ -189,6 +183,12 @@ div.wp-block-media-text {}
 	div.wp-block-media-text div.wp-block-media-text__content {}
 
 /**
+ * Cover
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
  * File
  */
 div.wp-block-file {}
@@ -199,46 +199,39 @@ div.wp-block-file {}
 	div.wp-block-file a.wp-block-file__button {}
 
 /**
- * Embeds
+ * Audio
  *
- * Additional Classes on figure element: .is-type-[video/audio/etc], .is-provider-[youtube/twitter/etc]
- * If Resize Option: .wp-embed-aspect-ratio-[16-9], .wp-has-aspect-ratio
+ * Needs details. PR welcome!
  */
-figure.wp-block-embed {}
 
-	figure.wp-block-embed div.wp-block-embed__wrapper {}
+/**
+ * Video
+ *
+ * Needs details. PR welcome!
+ */
 
 
 
 /* -------------------------------------------------------------------------- */
 
-/*	8. Widget Blocks
+/*	7. Design Blocks
 /* -------------------------------------------------------------------------- */
 
 /**
- * Social Links
+ * Button
+ *
+ * Note: Buttons container added in WP5.4
  *
  * Alignments: alignleft, aligncenter, alignright
- * Default Style Variations: is-style-logos-only, is-style-pill-shape
+ * Default Style Variations: is-style-outline
+ * Possible Inline Styles: border-radius
+ * Color Support: Background, Text
  */
-ul.wp-block-social-links {}
+div.wp-block-buttons {}
 
-	ul.wp-block-social-links li.wp-social-link.wp-social-link-NAME {}
+	div.wp-block-button {}
 
-	ul.wp-block-social-links li.wp-social-link a svg path {}
-
-/* default style, note high specificity! */
-.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-NAME {
-	background-color: ;
-	color: ;
-}
-
-
-
-/* -------------------------------------------------------------------------- */
-
-/*	9. Layout Blocks
-/* -------------------------------------------------------------------------- */
+		div.wp-block-button a.wp-block-button__link {} /* option to disable */
 
 /**
  * Columns
@@ -253,7 +246,7 @@ div.wp-block-columns {}
 	div.wp-block-columns div.wp-block-column {}
 	
 /**
-s* Group
+ * Group
  *
  * Alignments: alignwide, alignfull
  * Option Classes: has-background
@@ -262,3 +255,119 @@ s* Group
 div.wp-block-group {}
 
 	div.wp-block-group div.wp-block-group__inner-container {}
+
+/**
+ * More
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
+ * Page Break
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
+ * Separator
+ *
+ * Default Style Variations: is-style-wide, is-style-dots
+ */
+hr.wp-block-separator {}
+
+/**
+ * Spacer
+ *
+ * Inline Style: height: [XXX]px;
+ */
+div.wp-block-spacer {}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	8. Widget Blocks
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Archives
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
+ * Calendar
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
+ * Categories
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
+ * Latest Comments
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
+ * Latest Posts
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
+ * RSS
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
+ * Search
+ *
+ * Needs details. PR welcome!
+ */
+
+/**
+ * Social Icons
+ *
+ * Alignments: alignleft, aligncenter, alignright
+ * Default Style Variations: is-style-logos-only, is-style-pill-shape
+ */
+ul.wp-block-social-links {}
+
+	ul.wp-block-social-links li.wp-social-link.wp-social-link-NAME {}
+
+	ul.wp-block-social-links li.wp-social-link a svg path {}
+
+	/* default style, note high specificity! */
+	.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-NAME {
+		/* background-color: ;
+		color: ; */
+	}
+
+/**
+ * Tag Cloud
+ *
+ * Needs details. PR welcome!
+ */
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	9. Embed Blocks
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Embeds
+ *
+ * Additional Classes on figure element: .is-type-[video/audio/etc], .is-provider-[youtube/twitter/etc]
+ * If Resize Option: .wp-embed-aspect-ratio-[16-9], .wp-has-aspect-ratio
+ */
+figure.wp-block-embed {}
+
+	figure.wp-block-embed div.wp-block-embed__wrapper {}
