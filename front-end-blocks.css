@@ -223,12 +223,12 @@ figure.wp-block-embed {}
  */
 ul.wp-block-social-links {}
 
-	ul.wp-block-social-links li.wp-social-link.wp-social-link-{site} {}
+	ul.wp-block-social-links li.wp-social-link.wp-social-link-NAME {}
 
 	ul.wp-block-social-links li.wp-social-link a svg path {}
 
 /* default style, note high specificity! */
-.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-{site} {
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-NAME {
 	background-color: ;
 	color: ;
 }
