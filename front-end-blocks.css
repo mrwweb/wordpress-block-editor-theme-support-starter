@@ -167,6 +167,9 @@ figure.wp-block-image {}
 
 	figure.wp-block-image img {}
 
+	/* Caption Markup */
+	figure.wp-block-image figcaption {}
+
 	/* when aligned right or left */
 	div.wp-block-image figure.alignright.size-medium img {}
 
