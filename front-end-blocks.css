@@ -291,6 +291,9 @@ div.wp-block-group {}
  * Separator
  *
  * Default Style Variations: is-style-wide, is-style-dots
+ *
+ * Note:
+ * 		- Core block styles (if in use), use a default <hr> selector with extremely high specificity: .wp-block-separator:not(.is-style-wide):not(.is-style-dots)
  */
 hr.wp-block-separator {}
 
