@@ -84,5 +84,14 @@ div.wp-block-button div.wp-block-button__link {}
  *
  * Provides unique class for text link and uses div instead of a elements
  */
+/* Text link */
 div.wp-block-file div.wp-block-file__textlink {}
+
+/* Text link when button option is disabled */
+div.wp-block-file__textlink:first-child:last-child {}
+
+/* Text link when button option is enabled */
+div.wp-block-file__textlink:first-child:not(:last-child) {}
+
+/* Download Button */
 div.wp-block-file div.wp-block-file__file {}

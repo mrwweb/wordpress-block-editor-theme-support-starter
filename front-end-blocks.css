@@ -208,6 +208,13 @@ div.wp-block-file {}
 	/* download link */
 	div.wp-block-file a:first-child {}
 
+	/* Text link when button option is disabled */
+	div.wp-block-file a:first-child:last-child {}
+
+	/* Text link when button option is enabled */
+	div.wp-block-file a:first-child:not(:last-child) {}
+
+	/* Download Button */
 	div.wp-block-file a.wp-block-file__button {}
 
 /**
