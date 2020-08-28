@@ -59,11 +59,17 @@
 =            4. Blocks with Different Markup         =
 ====================================================*/
 
-/*
+/**
  * Button
  *
- * Uses divs instead of a elements
+ * Uses div instead of a elements
  */
-div.wp-block-button {}
+div.wp-block-button div.wp-block-button__link {}
 
-	div.wp-block-button div.wp-block-button__link {}
+/**
+ * File
+ *
+ * Provides unique class for text link and uses div instead of a elements
+ */
+div.wp-block-file div.wp-block-file__textlink {}
+div.wp-block-file div.wp-block-file__file {}
