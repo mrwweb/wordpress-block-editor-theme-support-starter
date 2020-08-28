@@ -61,6 +61,8 @@
 
 /*
  * Button
+ *
+ * Uses divs instead of a elements
  */
 div.wp-block-button {}
 
