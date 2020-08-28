@@ -185,8 +185,20 @@ div.wp-block-media-text {}
 /**
  * Cover
  *
- * Needs details. PR welcome!
+ * Alignments: alignleft, aligncenter, alignright, alignwide, alignfull
+ * Color Support: Background (Color or Gradient)
+ * Option Classes: has-background-dim has-background-dim-XX has-parallax has-custom-content-position is-position-[top/center/bottom]-[left/center/right]
+ * Notes:
+ * 		- has-background-dim-XX class only uses multiples of 10
+ * 		- Background image is applied via style attribute on .wp-block-cover
+ * 		- The cover block does NOT apply the .has-background class when it has a background color or gradient. See: https://github.com/WordPress/gutenberg/issues/21439
  */
+div.wp-block-cover {}
+
+	div.wp-block-cover div.wp-block-cover__inner-container {}
+
+	/* Core selector used to style pseudo element used for tinting/fading background image */
+	.wp-block-cover.has-background-dim::before {}
 
 /**
  * File
