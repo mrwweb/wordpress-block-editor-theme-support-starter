@@ -18,9 +18,21 @@
  * @see: https://developer.wordpress.org/block-editor/developers/themes/theme-support/
  */
 
+/**
+ * Post Title Field
+ */
+.editor-post-title {}
+
+	/* The faux placeholder text for the title */
+	.editor-post-title label {}
+
+	/* The user-entered title */
+	.editor-post-title .editor-post-title__input {}
+
 /*==========================================
 =            2. Block Editor Width         =
 ==========================================*/
+
 /* Main column width */
 .wp-block {
     max-width: 720px;
@@ -35,6 +47,7 @@
 .wp-block[data-align="full"] {
     max-width: none;
 }
+
 
 
 /*=================================================
