@@ -1,0 +1,123 @@
+/* -------------------------------------------------------- */
+
+/* The Events Calendar Block
+/* for plugin by Modern Tribe
+/*
+/* Set default blocks for new Events with the tribe_events_editor_default_template filter: https://theeventscalendar.com/knowledgebase/k/change-the-default-event-template-in-block-editor/
+/* -------------------------------------------------------- */
+
+/**
+ * Generic Block Class
+ *
+ * Many but not all Tribe blocks have this class. Might be useful for increasing specificity of selectors if needed.
+ */
+.tribe-block {}
+
+/**
+ * Event Date Time
+ */
+.tribe-events-schedule {}
+
+	h2.tribe-events-schedule__datetime {}
+
+		.tribe-events-schedule__date.tribe-events-schedule__date--start {}
+		.tribe-events-schedule__separator.tribe-events-schedule__separator--date {}
+		.tribe-events-schedule__time.tribe-events-schedule__time--start {}
+		.tribe-events-schedule__date.tribe-events-schedule__date--end {}
+		.tribe-events-schedule__separator.tribe-events-schedule__separator--time {}
+		.tribe-events-schedule__time.tribe-events-schedule__time--end {}
+
+/**
+ * Price
+ */
+.tribe-block__event-price {}
+
+	.tribe-block__event-price .tribe-block__event-price__cost {}
+
+	.tribe-block__event-price .tribe-block__event-price__description {}
+
+/**
+ * Event Website
+ */
+.tribe-block__event-website {}
+
+	.tribe-block__event-website a {}
+
+/**
+ * Events Links (Google Calendar and iCal)
+ *
+ * Shared button styles from .tribe-block__btn--link
+ */
+.tribe-block__events-link {}
+
+	.tribe-block__events-link. .tribe-block__events-gcal {}
+
+/**
+ * Organizer
+ */
+.tribe-block__organizer__details {}
+
+	.tribe-block__organizer__title {}
+		.tribe-block__organizer__title h3 {}
+
+	p.tribe-block__organizer__phone {}
+	p.tribe-block__organizer__website {}
+	p.tribe-block__organizer__email {}
+
+/**
+ * Venue
+ */
+.tribe-block__venue {} 
+
+/* If Map is active */
+.tribe-block__venue.tribe-block__venue--has-map {}
+
+	.tribe-block__venue__meta_venue .tribe-block__venue__meta {}
+		.tribe-block__venue .tribe-block__venue__name {}
+
+		.tribe-block__venue address.tribe-block__venue__address {}
+			/* 
+			Child components of address:
+				.tribe-street-address
+				.tribe-events-gmap
+				.tribe-delimiter
+				.tribe-region.tribe-events-abbr
+				.tribe-postal-code
+				.trive-country-name
+			*/
+
+		.tribe-block__venue span.tribe-block__venue__phone {}
+		.tribe-block__venue .tribe-block__venue__meta br {} /* divides phone and website */
+		.tribe-block__venue span.tribe-block__venue__website {}
+
+	.tribe-block__venue .tribe-block__venue__map {}
+		/* the map container */
+		.tribe-block__venue .tribe-block__venue__map > div {}
+
+/**
+ * Event Categories
+ */
+.tribe-events-section-category.tribe-events-single-section {}
+	dt.tribe-events-event-categories-label {}
+	dd.tribe-events-event-categories {}
+		dd.tribe-events-event-categories a {}
+
+/**
+ * Event Details Classic
+ */
+.tribe-events-event-meta.tribe-events-meta-group {}
+
+	.tribe-events-meta-group h3.tribe-events-single-section-title {}
+
+	.tribe-events-meta-group-details {}
+
+	.tribe-events-meta-group-organizer {}
+
+		.tribe-events-meta-group dl {}
+			.tribe-events-meta-group dt {}
+			.tribe-events-meta-group dd {}
+
+/**
+ * Featured Image
+ */
+.tribe-events-event-image {}
